@@ -1,6 +1,22 @@
-jq_box_generator
-================
-<div id="box"></div>
+<html>
+	<head>
+		<style>
+			.boxify li{
+				background: #fff;
+				border:1px solid #000;
+				font-size: 4em;
+				text-align: center;
+
+			}
+			.boxSelected{
+				background: #f00 !important;
+			}			
+		</style>
+		<script src="jq.js"></script>
+		<script src="box.js"></script>
+	</head>
+	<body>
+		<div id="box"></div>
 		<script>
 			$('#box').boxify(function(){
 				var result;//array of selected boxs
@@ -22,3 +38,5 @@ jq_box_generator
 			});			
 			*/
 		</script>
+	</body>
+</html>
